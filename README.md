@@ -6,6 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macOS%20%7C%20windows-lightgrey)]()
 [![Inspired by](https://img.shields.io/badge/inspired%20by-wangkanai%2Fdevops--mcp-blue)](https://github.com/wangkanai/devops-mcp)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/PaoEng/azdo)
 
 Ispirato a [`wangkanai/devops-mcp`](https://github.com/wangkanai/devops-mcp), ridisegnato con
 **configurazione centrale** (invece di un file `.azure-devops.json` per ogni repository) e con la
