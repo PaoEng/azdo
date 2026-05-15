@@ -1,0 +1,11 @@
+<Project>
+  <!--
+    On Linux (including WSL), redirect MSBuild intermediate and output folders to the
+    Linux filesystem to avoid NTFS permission errors (SetUnixFileMode, Touch task MSB3374/MSB4018).
+    On Windows the default paths are used unchanged.
+  -->
+  <PropertyGroup Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))' == 'true'">
+    <BaseIntermediateOutputPath>/tmp/azdo-msbuild/$(MSBuildProjectName)/obj/</BaseIntermediateOutputPath>
+    <BaseOutputPath>/tmp/azdo-msbuild/$(MSBuildProjectName)/bin/</BaseOutputPath>
+  </PropertyGroup>
+</Project>

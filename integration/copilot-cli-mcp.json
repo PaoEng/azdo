@@ -1,0 +1,10 @@
+{
+  "_comment": "Drop this into GitHub Copilot CLI's MCP config (typically ~/.config/github-copilot/cli/mcp-config.json or whatever 'copilot --help' reports). Adjust the absolute path to the azdo binary.",
+  "mcpServers": {
+    "azdo": {
+      "command": "/usr/local/bin/azdo",
+      "args": ["mcp", "serve"],
+      "env": {}
+    }
+  }
+}
