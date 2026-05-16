@@ -17,13 +17,14 @@ public class McpToolsTests
         "azdo_pr_list",
         "azdo_build_list",
         "azdo_build_status",
+        "azdo_pr_create",
         "azdo_build_trigger",
     ];
 
     [Fact]
-    public void All_Contains11Tools()
+    public void All_Contains12Tools()
     {
-        Assert.Equal(11, McpTools.All.Length);
+        Assert.Equal(12, McpTools.All.Length);
     }
 
     [Fact]
